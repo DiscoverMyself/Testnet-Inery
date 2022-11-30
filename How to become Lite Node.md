@@ -8,7 +8,7 @@
 > [Node Lite & Master](https://docs.inery.io/docs/category/lite--master-nodes)
 
 **Explorer :**
-> [Explorer Inary](https://explorer.inery.io/ "Explorer Inary")
+> [Explorer Inery](https://explorer.inery.io/ "Explorer Inary")
 
 ## 1. Update
 ```
