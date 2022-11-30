@@ -362,6 +362,7 @@ void neriitoken::close( const name& owner, const symbol& symbol )
 
 } /// namespace inery
 EOF
+```
 
 ## 4. Build
 ```
