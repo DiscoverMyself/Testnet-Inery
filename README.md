@@ -42,13 +42,16 @@ Sign Up [here](https://testnet.inery.io/dashboard/)
 
 # 3. Wallet Setup
 
-https://github.com/bangpateng/inery/blob/main/Tutorial-Master-Node.md
+set up your wallet before move to the tasks
 
-Pilih Salah Satu, Jalankan Lite Node atau Master Node (Saran Sih Master Node)
+setup here: https://github.com/DiscoverMyself/Testnet-Inery/edit/main/wallet-setup.md
 
 # 4. Task Inery Get Reward INR Mainnet
 
-- [Task 1](https://github.com/bangpateng/inery/blob/main/task1.md "Task 1")
-- [Task 2](https://github.com/bangpateng/inery/blob/main/task2.md "Task 2")
-- [Task 3](https://github.com/bangpateng/inery/blob/main/task3.md "Task 3")
+- [Task 1 - Master Approval](https://github.com/DiscoverMyself/Testnet-Inery/blob/main/task-1.md)
+- [Task 2 - Make your own currency and transfer to someone](https://github.com/DiscoverMyself/Testnet-Inery/blob/main/task-2.md)
+- [Task 3 - Create Your Own Value Contract](https://github.com/DiscoverMyself/Testnet-Inery/blob/main/task-3.md)
 - Task 4 (soon)
+- Task 5 (soon)
+- Task 6 (soon)
+- Task 7 (soon)
