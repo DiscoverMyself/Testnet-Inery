@@ -32,11 +32,15 @@ Explorer :
 
 Sign Up [here](https://testnet.inery.io/dashboard/)
 
-# 2. Lite Node
+# 2. Choose which one you want to run
 
-[Tutorial](https://github.com/DiscoverMyself/Testnet-Inery/blob/main/How%20to%20become%20Lite%20Node.md)
+1. [Lite Node](https://github.com/DiscoverMyself/Testnet-Inery/blob/main/How%20to%20become%20Lite%20Node.md)
 
-# 3. Master Node
+2. [Master Node](https://github.com/DiscoverMyself/Testnet-Inery/blob/main/how-to-become-Master-Node.md)
+
+**prefer Master Node**
+
+# 3. Wallet Setup
 
 https://github.com/bangpateng/inery/blob/main/Tutorial-Master-Node.md
 
