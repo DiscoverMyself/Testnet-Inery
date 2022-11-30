@@ -41,8 +41,9 @@ cline push action inery.token transfer '["<account_name>", "<target_account>", "
 ```
 
 IMPORTANT:
-you must send your token to `inery` as target account, and send to 10 another users too (you can check thei account name on explorer https://explorer.inery.io)
+you must send your token to `inery` as target account, and send to 10 another users too (you can check their account name on explorer https://explorer.inery.io)
 
+</p>
 ---------- CONFIGURATION -----------
 
 - `<your_name_wallet>`: your wallet name who created before
@@ -50,6 +51,8 @@ you must send your token to `inery` as target account, and send to 10 another us
 - `<amount>`: how much it (without . or ,) ex: 1000000
 - `<your_token_name>`: create your Token's name, in other case, use the name you created before
 - `<target_account>`: account target who wants you sending your Tokens
+
+  </p>
 
 
 ### Finish the task
