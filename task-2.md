@@ -17,8 +17,6 @@ cline get code inery.token -c token.wasm -a token.abi --wasm
 cline set code -j <account_name> token.wasm
 ```
 
-- `<account_name>`: your account name on [Inery dashboard](testnet.inery.io/dashboard)
-
 **3. Set `abi` to your account**
 ```
 cline set abi <account_name> token.abi
@@ -51,7 +49,7 @@ you must send your token to `inery` as target account, and send to 10 another us
 - `<account_name>`: your account name on [Inery dashboard](testnet.inery.io/dashboard)
 - `<amount>`: how much it (without . or ,) ex: 1000000
 - `<your_token_name>`: create your Token's name, in other case, use the name you created before
-- `<target_account>: account target who wants you sending your Tokens
+- `<target_account>`: account target who wants you sending your Tokens
 
 
 ### Finish the task
