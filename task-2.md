@@ -57,6 +57,6 @@ you must send your token to `inery` as target account, and send to 10 another us
 
 ### Finish the task
 
-After completed all the tasks, you can click finish task "Make your own currency and transfer to someone" on [Inery dashboard](https://testnet.inery.io/dashboard)
+After completed all the tasks, you can click finish task **"Make your own currency and transfer to someone"** on [Inery dashboard](https://testnet.inery.io/dashboard)
 
 ![aaainery](https://user-images.githubusercontent.com/78480857/204692435-4caa53d4-949e-44cb-8f8b-910702ff55dd.png)
