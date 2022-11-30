@@ -42,3 +42,25 @@ cline system makeprod approve <account_name> <account_name>
 
 ```
 - `<account_name>`: your account name on [Inery dashboard](testnet.inery.io/dashboard)
+
+
+
+# usefull commands
+
+## unlock wallet
+```
+cline wallet unlock -n <your_name_wallet>
+```
+
+- `<your_name_wallet>`: your wallet name who created before
+
+## find wallet password
+```
+cd
+cd ~/inery-node/inery.setup/
+```
+```
+more file.txt
+```
+
+- if you change `file.txt` file name before, you must replace the command with file name that you given
