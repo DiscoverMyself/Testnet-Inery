@@ -7,35 +7,35 @@ cline wallet unlock -n <your_name_wallet>
 
 ## 2. Generate `abi.wasm` and `token.wasm` file
 
-**1. generate**
+**a. generate**
 ```
 cline get code inery.token -c token.wasm -a token.abi --wasm
 ```
 
-**2. Set `wasm` to your account**
+**b. Set `wasm` to your account**
 ```
 cline set code -j <account_name> token.wasm
 ```
 
-**3. Set `abi` to your account**
+**c. Set `abi` to your account**
 ```
 cline set abi <account_name> token.abi
 ```
 
 ## 3. Create, deploy and push your Token
 
-**1. Create Token***
+**a. Create Token***
 ```
 cline push action inery.token create '["<account_name>", "<amount> <your_token_name>" , "creating my first tokens"]' -p <account_name>
 ```
 
 
-**2. Deploy Token**
+**b. Deploy Token**
 ```
 cline push action inery.token issue '["<account_name>", "<amount> <your_token_name>", "Issuing my own tokens"]' -p <account_name>
 ```
 
-**3. Push/Send Token**
+**c. Push/Send Token**
 ```
 cline push action inery.token transfer '["<account_name>", "<target_account>", "<amount> <your_token_name>", "Here you go my token for free :) "]' -p <account_name>
 ```
@@ -44,7 +44,10 @@ IMPORTANT:
 you must send your token to `inery` as target account, and send to 10 another users too (you can check their account name on explorer https://explorer.inery.io)
 
 </p>
----------- CONFIGURATION -----------
+
+
+
+**---------- CONFIGURATION -----------**
 
 - `<your_name_wallet>`: your wallet name who created before
 - `<account_name>`: your account name on [Inery dashboard](testnet.inery.io/dashboard)
