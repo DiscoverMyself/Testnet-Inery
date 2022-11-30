@@ -38,7 +38,7 @@ Sign Up [here](https://testnet.inery.io/dashboard/)
 
 2. [Master Node](https://github.com/DiscoverMyself/Testnet-Inery/blob/main/how-to-become-Master-Node.md)
 
-**prefer Master Node**
+* **prefer Master Node**
 
 # 3. Wallet Setup
 
