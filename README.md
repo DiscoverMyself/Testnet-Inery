@@ -17,8 +17,8 @@ Explorer :
 
 |  Component |  Minimum Requirements |
 | ------------ | ------------ |
-| CPU  | Intel Core i7-8700 Hexa-Core  |
-| RAM | DDR4 64 GB  |
+| CPU  | 4vCPU or higher  |
+| RAM | DDR4 8 GB  |
 | Disk  | 200 GB NVMe SSD |
 | Connection | 1000MBps Bandwith |
 
