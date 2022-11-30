@@ -34,7 +34,7 @@ Sign Up [here](https://testnet.inery.io/dashboard/)
 
 # 2. Lite Node
 
-https://github.com/DiscoverMyself/Testnet-Inery/blob/How-to-become-Lite-Node.md
+https://github.com/DiscoverMyself/Testnet-Inery/main/How-to-become-Lite-Node.md
 
 # 3. Master Node
 
