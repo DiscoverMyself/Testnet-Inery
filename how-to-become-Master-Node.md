@@ -121,37 +121,4 @@ chmod +x start.sh
 
 if it synced, will shows `received block...` logs
 
-# Usefull commands
-## Restart Node
-```
-cd ~/inery-node/inery.setup/master.node/
-./stop.sh
-```
-run again
-```
-./start.sh
-```
-## Delete Node
-
-
-```
-cd
-pkill nodine
-```
-```
-screen -X -S master quit
-```
-```
-cd ~/inery-node/inery.setup/master.node/
-./stop.sh
-```
-```
-cd ~/inery-node/inery.setup/master.node/
-```
-```
-./clean.sh
-```
-```
-cd
-rm -rf inery-node
-```
+**ALL SET!**
