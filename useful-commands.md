@@ -34,14 +34,14 @@ cd
 pkill nodine
 ```
 ```
-screen -X -S master quit
+screen -X -S lite quit
 ```
 ```
-cd ~/inery-node/inery.setup/master.node/
+cd ~/inery-node/inery.setup/lite.node/
 ./stop.sh
 ```
 ```
-cd ~/inery-node/inery.setup/master.node/
+cd ~/inery-node/inery.setup/lite.node/
 ```
 ```
 ./clean.sh
