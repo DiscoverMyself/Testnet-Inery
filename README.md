@@ -18,8 +18,8 @@ Explorer :
 |  Component |  Minimum Requirements |
 | ------------ | ------------ |
 | CPU  | 4vCPU or higher  |
-| RAM | DDR4 8 GB  |
-| Disk  | 200 GB NVMe SSD |
+| RAM | DDR4 4 GB  |
+| Disk  | 500 GB  |
 | Connection | 1000MBps Bandwith |
 
 ## Software
