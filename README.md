@@ -46,7 +46,11 @@ set up your wallet before move to the tasks
 
 setup here: https://github.com/DiscoverMyself/Testnet-Inery/edit/main/wallet-setup.md
 
-# 4. Task Inery Get Reward INR Mainnet
+# 4. Useful Commands
+
+find here: https://github.com/DiscoverMyself/Testnet-Inery/blob/main/useful-commands.md
+
+# 5. Task Inery Get Reward INR Mainnet
 
 - [Task 1 - Master Approval](https://github.com/DiscoverMyself/Testnet-Inery/blob/main/task-1.md)
 - [Task 2 - Make your own currency and transfer to someone](https://github.com/DiscoverMyself/Testnet-Inery/blob/main/task-2.md)
