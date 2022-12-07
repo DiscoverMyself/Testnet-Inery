@@ -347,7 +347,7 @@ rm -rvf neriitoken.cpp
 ```
 
 ```
-sudo tee $HOME/neriitoken/bakekok >/dev/null <<EOF
+cat $HOME/neriitoken/bakekok >/dev/null <<EOF
 #include "neriitoken.hpp"
 
 namespace inery {
