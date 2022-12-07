@@ -183,7 +183,7 @@ cd ~/neriitoken
 rm -f neriitoken.hpp
 ```
 ```
-sudo tee $HOME/neriitoken/neriitoken.hpp >/dev/null <<EOF
+cat $HOME/neriitoken/neriitoken.hpp >/dev/null <<EOF
 #pragma once
 
 #include <inery/asset.hpp>
@@ -343,10 +343,11 @@ EOF
 ```
 cd
 cd ~/neriitoken
+rm -f neriitoken.cpp
 ```
 
 ```
-sudo tee $HOME/neriitoken/neriitoken.cpp >/dev/null <<EOF
+cat $HOME/neriitoken/neriitoken.cpp >/dev/null <<EOF
 #include "neriitoken.hpp"
 
 namespace inery {
