@@ -55,7 +55,7 @@ find here: https://github.com/DiscoverMyself/Testnet-Inery/blob/main/useful-comm
 - [Task 1 - Master Approval](https://github.com/DiscoverMyself/Testnet-Inery/blob/main/task-1.md)
 - [Task 2 - Make your own currency and transfer to someone](https://github.com/DiscoverMyself/Testnet-Inery/blob/main/task-2.md)
 - [Task 3 - Create Your Own Value Contract](https://github.com/DiscoverMyself/Testnet-Inery/blob/main/task-3.md)
-- Task 4 (soon)
+- [Task 4 - RPC API push transaction](https://github.com/alteregogi/ineryjs/tree/master/example)
 - Task 5 (soon)
 - Task 6 (soon)
 - Task 7 (soon)
