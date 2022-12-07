@@ -34,10 +34,9 @@ inery-init -bare=1 --project=neriitoken
 **b. edit `neriitoken.hpp`**
 ```
 cd ~/neriitoken
-rm -f neriitoken.hpp
+nano neriitoken.hpp
 ```
 ```
-sudo tee $HOME/neriitoken/neriitoken.hpp >/dev/null <<EOF
 #pragma once
 
 #include <inery/asset.hpp>
@@ -184,7 +183,6 @@ namespace inery {
    };
 
 }
-EOF
 ```
 
 
@@ -197,11 +195,10 @@ EOF
 ```
 cd
 cd ~/neriitoken
-rm -f neriitoken.cpp
+nano neriitoken.cpp
 ```
 
 ```
-sudo tee $HOME/neriitoken/neriitoken.cpp >/dev/null <<EOF
 #include "neriitoken.hpp"
 
 namespace inery {
@@ -361,7 +358,6 @@ void neriitoken::close( const name& owner, const symbol& symbol )
 }
 
 } /// namespace inery
-EOF
 ```
 
 ## 4. Build
