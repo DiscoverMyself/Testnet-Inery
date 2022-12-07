@@ -180,7 +180,7 @@ inery-init -bare=1 --project=neriitoken
 **b. edit `neriitoken.hpp`**
 ```
 cd ~/neriitoken
-rm -rvf neriitoken.hpp
+rm -f neriitoken.hpp
 ```
 ```
 sudo tee $HOME/neriitoken/neriitoken.hpp >/dev/null <<EOF
@@ -343,11 +343,11 @@ EOF
 ```
 cd
 cd ~/neriitoken
-rm -rvf neriitoken.cpp
+rm -f neriitoken.cpp
 ```
 
 ```
-cat $HOME/neriitoken/bakekok >/dev/null <<EOF
+sudo tee $HOME/neriitoken/bakekok >/dev/null <<EOF
 #include "neriitoken.hpp"
 
 namespace inery {
