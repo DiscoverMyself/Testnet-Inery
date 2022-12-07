@@ -1,9 +1,155 @@
-# Task 3 - Create Your Value Contract
+# <h1> Task 3 - Create Your Value Contract </h1>
+
+## Instal/Update dependencies
+```
+sudo apt update -y && sudo apt upgrade -y
+sudo apt install -y make bzip2 automake libbz2-dev libssl-dev doxygen graphviz libgmp3-dev \
+autotools-dev libicu-dev python2.7 python2.7-dev python3 python3-dev \
+autoconf libtool curl zlib1g-dev sudo ruby libusb-1.0-0-dev \
+libcurl4-gnutls-dev pkg-config patch llvm-7-dev clang-7 vim-common jq libncurses5 git
+```
+## 1. Clone Repositories
+```
+git clone --recursive https://github.com/inery-blockchain/inery.cdt
+```
+
+## 2. Export Path
+```
+export PATH="$PATH:$HOME/inery.cdt/bin:$HOME/inery-node/inery/bin"
+```
+
+## 3. Create & write code
+```
+mkdir -p $HOME/inrcrud
+```
+```
+sudo tee $HOME/inrcrud/inrcrud.cpp >/dev/null <<EOF
+#include <inery/inery.hpp>
+#include <inery/print.hpp>
+#include <string>
+
+using namespace inery;
+
+using std::string;
+
+class [[inery::contract]] inrcrud : public inery::contract {
+  public:
+    using inery::contract::contract;
+
+
+        [[inery::action]] void create( uint64_t id, name user, string data ) {
+            records recordstable( _self, id );
+            auto existing = recordstable.find( id );
+            check( existing == recordstable.end(), "record with that ID already exists" );
+            check( data.size() <= 256, "data has more than 256 bytes" );
+
+            recordstable.emplace( _self, [&]( auto& s ) {
+               s.id         = id;
+               s.owner      = user;
+               s.data       = data;
+            });
+
+            print( "Hello, ", name{user} );
+            print( "Created with data: ", data );
+        }
+
+         [[inery::action]] void read( uint64_t id ) {
+            records recordstable( _self, id );
+            auto existing = recordstable.find( id );
+            check( existing != recordstable.end(), "record with that ID does not exist" );
+            const auto& st = *existing;
+            print("Data: ", st.data);
+        }
+
+        [[inery::action]] void update( uint64_t id, string data ) {
+            records recordstable( _self, id );
+            auto st = recordstable.find( id );
+            check( st != recordstable.end(), "record with that ID does not exist" );
+
+
+            recordstable.modify( st, get_self(), [&]( auto& s ) {
+               s.data = data;
+            });
+
+            print("Data: ", data);
+        }
+
+            [[inery::action]] void destroy( uint64_t id ) {
+            records recordstable( _self, id );
+            auto existing = recordstable.find( id );
+            check( existing != recordstable.end(), "record with that ID does not exist" );
+            const auto& st = *existing;
+
+            recordstable.erase( st );
+
+            print("Record Destroyed: ", id);
+
+        }
+
+  private:
+    struct [[inery::table]] record {
+       uint64_t        id;
+       name     owner;
+       string          data;
+       uint64_t primary_key()const { return id; }
+    };
+
+    typedef inery::multi_index<"records"_n, record> records;
+ };
+EOF
+```
+
+## 4. Compile code
+
+```
+inery-cpp $HOME/inrcrud/inrcrud.cpp -o $HOME/inrcrud/inrcrud.wasm
+```
+
+### <b> before doing any transaction, make sure your wallet unlocked </b>
+
+```
+cline wallet unlock -n <wallet_name> --pasword <wallet_password>
+```
+
+## 5. Set Contract
+
+```
+cline set contract <account_name> ./inrcrud
+```
+
+## 6. Create Contract
+
+```
+cline push action <account_name> create '[1, "<account_name>", "My first Record"]' -p <account_name> --json
+```
+
+## 7. Read Contract
+
+```
+cline push action <account_name> read [1] -p <account_name> --json
+```
+## 8. Update
+
+```
+cline push action <account_name> read [1] -p <account_name> --json
+```
+
+## 9. Destroy
+
+```
+cline push action <account_name> destroy [1] -p <account_name> --json
+```
+
+
+# Create token and make transaction using your contract 
+
+
 
 ## 1. Clone Repositories
 ```
 git clone https://github.com/inery-blockchain/inery.cdt
 ```
+
 
 ## 2. Edit bashrc
 ```
@@ -34,9 +180,11 @@ inery-init -bare=1 --project=neriitoken
 **b. edit `neriitoken.hpp`**
 ```
 cd ~/neriitoken
-nano neriitoken.hpp
+rm -f neriitoken.hpp
+cat neriitoken.hpp
 ```
 ```
+sudo tee $HOME/neriitoken/neriitoken.hpp
 #pragma once
 
 #include <inery/asset.hpp>
@@ -183,6 +331,7 @@ namespace inery {
    };
 
 }
+EOF
 ```
 
 
@@ -195,10 +344,12 @@ namespace inery {
 ```
 cd
 cd ~/neriitoken
-nano neriitoken.cpp
+rm -f neriitoken.cpp
+cat neriitoken.cpp
 ```
 
 ```
+sudo tee $HOME/neriitoken/neriitoken.cpp
 #include "neriitoken.hpp"
 
 namespace inery {
@@ -358,6 +509,7 @@ void neriitoken::close( const name& owner, const symbol& symbol )
 }
 
 } /// namespace inery
+EOF
 ```
 
 ## 4. Build
