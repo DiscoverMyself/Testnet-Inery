@@ -69,7 +69,7 @@ the informations below appeared on [dashboard](testnet.inery.io/dashboard):
 ## 7. Start blockchain protocol
 ```
 cd
-cd ~/inery-node/inery.setup/master.node/
+cd ~/inery-node/inery.setup
 ```
 ```
 screen -R master
