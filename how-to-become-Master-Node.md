@@ -24,7 +24,7 @@ libcurl4-gnutls-dev pkg-config patch llvm-7-dev clang-7 vim-common jq libncurses
 ```
 ufw allow 22 && ufw allow 8888 && ufw allow 9010 && ufw enable
 ```
-## 3. Start Node
+## 3. Clone repository
 ```
 git clone https://github.com/inery-blockchain/inery-node
 ```
