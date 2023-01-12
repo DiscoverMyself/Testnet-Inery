@@ -29,16 +29,17 @@ cline wallet import --private-key <private_key> -n <your_name_wallet>
 
 # Register wallet as block producer
 ```
-cline system regproducer <account_name> <public_key> 0.0.0.0:9010
+cline master bind <account_name> <public_key> <your_IP>:9010
 ```
 
 - `<account_name>`: your account name on [Inery dashboard](testnet.inery.io/dashboard)
 - `<public_key>`: your Inery wallet public key on [Inery dashboard](testnet.inery.io/dashboard)
+- `<your_IP>: your VPS IP where registered on [Inery dashboard](testnet.inery.io/dashboard)
 
 
 # Approve wallet as block producer
 ```
-cline system makeprod approve <account_name> <account_name>
+cline master approve <account_name>
 
 ```
 - `<account_name>`: your account name on [Inery dashboard](testnet.inery.io/dashboard)
