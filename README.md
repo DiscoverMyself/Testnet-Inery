@@ -44,7 +44,7 @@ Sign Up [here](https://testnet.inery.io/dashboard/)
 
 set up your wallet before move to the [tasks](https://testnet.inery.io/dashboard)
 
-setup here: https://github.com/DiscoverMyself/Testnet-Inery/edit/main/wallet_setup.md
+setup here: https://github.com/DiscoverMyself/Testnet-Inery/blob/main/wallet_setup.md
 
 # 4. Useful Commands
 
