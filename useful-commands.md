@@ -1,6 +1,7 @@
 # CHECK LOG
 
 ```
+cd ~/inery-node/inery.setup/master.node
 tail -f blockchain/nodine.log
 ```
 
